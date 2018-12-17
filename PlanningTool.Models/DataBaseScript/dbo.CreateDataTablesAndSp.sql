@@ -222,4 +222,5 @@ BEGIN
 	   From Task tsk where tsk.Status = 1     
    END
 
-
+Insert into dbo.Status values(1,'In Progress')
+Insert into dbo.Status values(2,'Done')
