@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanningTool.View", "PlanningTool\PlanningTool.View.csproj", "{4E8D4605-182D-41D8-81FD-08C32372587F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanningTool.ViewModel", "PlanningTool.Lib\PlanningTool.ViewModel.csproj", "{C5554788-1296-42C7-8AF6-51086D36FE09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanningTool.Lib.UnitTest", "PlanningTool.Lib.UnitTest\PlanningTool.Lib.UnitTest.csproj", "{031A7E97-245D-4DE0-9183-7C74600FB3F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanningTool.Model", "PlanningTool.Models\PlanningTool.Model.csproj", "{FE5557EF-8194-41A9-9E65-26115CC09ABD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanningTool.DataBase", "PlanningTool.DataBase\PlanningTool.DataBase.csproj", "{C22FB5E1-EF84-46FF-81FD-BCF1B5ABBEC3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E8D4605-182D-41D8-81FD-08C32372587F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E8D4605-182D-41D8-81FD-08C32372587F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E8D4605-182D-41D8-81FD-08C32372587F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E8D4605-182D-41D8-81FD-08C32372587F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5554788-1296-42C7-8AF6-51086D36FE09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5554788-1296-42C7-8AF6-51086D36FE09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5554788-1296-42C7-8AF6-51086D36FE09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5554788-1296-42C7-8AF6-51086D36FE09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{031A7E97-245D-4DE0-9183-7C74600FB3F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{031A7E97-245D-4DE0-9183-7C74600FB3F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{031A7E97-245D-4DE0-9183-7C74600FB3F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{031A7E97-245D-4DE0-9183-7C74600FB3F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE5557EF-8194-41A9-9E65-26115CC09ABD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE5557EF-8194-41A9-9E65-26115CC09ABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE5557EF-8194-41A9-9E65-26115CC09ABD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE5557EF-8194-41A9-9E65-26115CC09ABD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C22FB5E1-EF84-46FF-81FD-BCF1B5ABBEC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C22FB5E1-EF84-46FF-81FD-BCF1B5ABBEC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C22FB5E1-EF84-46FF-81FD-BCF1B5ABBEC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C22FB5E1-EF84-46FF-81FD-BCF1B5ABBEC3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45
+	EndGlobalSection
+EndGlobal

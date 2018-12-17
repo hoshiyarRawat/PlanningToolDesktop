@@ -1,0 +1,51 @@
+﻿<Window x:Class="PlanningTool.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PlanningTool"
+        mc:Ignorable="d"
+        xmlns:viewModels="clr-namespace:PlanningTool.ViewModel.ViewModels;assembly=PlanningTool.ViewModel"
+        xmlns:views ="clr-namespace:PlanningTool.View.Views"
+        xmlns:locslControls ="clr-namespace:PlanningTool.View.Views.Controls"
+        Title="Planning Board" Height="350" Width="525">
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type viewModels:TaskReportViewModel}">
+            <locslControls:TaskReports />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:TaskViewModel}">
+            <locslControls:CreateTask />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:EmployeeViewModel}">
+            <locslControls:CreateEmployee />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:AssignTasksViewModel}">
+            <locslControls:AssignTasks />
+        </DataTemplate>
+    </Window.Resources>
+    <DockPanel>
+        <!--<Grid DockPanel.Dock="Top" HorizontalAlignment="Right">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <RadioButton Grid.Column="0" GroupName="mockdata" Command="{Binding MockData}" IsChecked="True">Enable Mock Data</RadioButton>
+            <RadioButton Grid.Column="1" GroupName="mockdata" Command="{Binding ActualData}">Enable Actual Data</RadioButton>
+        </Grid>-->
+        <Border DockPanel.Dock="Left" BorderBrush="Black" BorderThickness="0,0,1,0">
+            <ItemsControl ItemsSource="{Binding PageViewModels}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Button Content="{Binding Name}"
+                                Command="{Binding DataContext.ChangePageCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}"
+                                CommandParameter="{Binding }"
+                                Margin="2,5"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </Border>
+
+        <ContentControl Content="{Binding CurrentPageViewModel}" />
+    </DockPanel>
+   
+</Window>

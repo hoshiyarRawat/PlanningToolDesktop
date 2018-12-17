@@ -1,0 +1,10 @@
+C:\HoshiyarDownLoad\PlanningTool\PlanningTool.DataBase\bin\Debug\PlanningTool.DataBase.dll.config
+C:\HoshiyarDownLoad\PlanningTool\PlanningTool.DataBase\bin\Debug\PlanningTool.DataBase.dll
+C:\HoshiyarDownLoad\PlanningTool\PlanningTool.DataBase\bin\Debug\PlanningTool.DataBase.pdb
+C:\HoshiyarDownLoad\PlanningTool\PlanningTool.DataBase\bin\Debug\EntityFramework.dll
+C:\HoshiyarDownLoad\PlanningTool\PlanningTool.DataBase\bin\Debug\EntityFramework.SqlServer.dll
+C:\HoshiyarDownLoad\PlanningTool\PlanningTool.DataBase\bin\Debug\EntityFramework.xml
+C:\HoshiyarDownLoad\PlanningTool\PlanningTool.DataBase\bin\Debug\EntityFramework.SqlServer.xml
+C:\HoshiyarDownLoad\PlanningTool\PlanningTool.DataBase\obj\Debug\PlanningTool.DataBase.csprojResolveAssemblyReference.cache
+C:\HoshiyarDownLoad\PlanningTool\PlanningTool.DataBase\obj\Debug\PlanningTool.DataBase.dll
+C:\HoshiyarDownLoad\PlanningTool\PlanningTool.DataBase\obj\Debug\PlanningTool.DataBase.pdb
