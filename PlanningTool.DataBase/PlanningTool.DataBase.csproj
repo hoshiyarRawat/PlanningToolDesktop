@@ -67,7 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database\Employee.cs" />
-    <Compile Include="Database\PanningToolData.cs" />
+    <Compile Include="Database\PlanningToolData.cs" />
     <Compile Include="Database\Status.cs" />
     <Compile Include="Database\Task.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

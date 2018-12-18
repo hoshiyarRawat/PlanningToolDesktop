@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs/PlanningTool/v14
+/SQLQuery3.sql
+/SQLQuery1.sql
+/Drop dbo.Employee.sql

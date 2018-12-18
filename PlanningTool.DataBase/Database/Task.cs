@@ -12,29 +12,24 @@ namespace PlanningTool.DataBase.Database
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int TaskID { get; set; }
 
-        public int? ParentTaskID { get; set; }
-
-        [StringLength(200)]
+        [StringLength(400)]
         public string Title { get; set; }
 
-        [StringLength(10)]
+        [StringLength(1000)]
         public string Description { get; set; }
 
         public int? Duration { get; set; }
 
         public DateTime? StartDate { get; set; }
 
-        public DateTime? EndDate { get; set; }
-
         public int? PercentComplete { get; set; }
 
-        public DateTime? DueDate { get; set; }
-
-        [StringLength(50)]
-        public string Status { get; set; }
+        public int? Status { get; set; }
 
         public int? EmployeeId { get; set; }
 
         public virtual Employee Employee { get; set; }
+
+        public virtual Status Status1 { get; set; }
     }
 }

@@ -5,11 +5,10 @@ namespace PlanningTool.DataBase.Database
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
 
-    public partial class PanningToolData : DbContext
+    public partial class PlanningToolData : DbContext
     {
-        //string connectionstrint ="@"data source=(LocalDB)\MSSQLLocalDB;initial catalog=PlanningDataBase;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework" ;
-        public PanningToolData()
-            : base("name=PanningToolData")
+        public PlanningToolData()
+            : base("name=PlanningToolData")
         {
         }
 
@@ -23,9 +22,10 @@ namespace PlanningTool.DataBase.Database
                 .Property(e => e.Status1)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<Task>()
-                .Property(e => e.Description)
-                .IsFixedLength();
+            modelBuilder.Entity<Status>()
+                .HasMany(e => e.Tasks)
+                .WithOptional(e => e.Status1)
+                .HasForeignKey(e => e.Status);
         }
     }
 }
