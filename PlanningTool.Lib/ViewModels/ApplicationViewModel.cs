@@ -23,16 +23,22 @@ namespace PlanningTool.ViewModel.ViewModels
         #endregion
 
         public ApplicationViewModel()
-        {                               
-           
+        {
+
+            InitialSetup();
+            // Set starting page
+            CurrentPageViewModel = PageViewModels[0];
+        }
+
+        void InitialSetup()
+        {
+            PageViewModels.RemoveRange(0, PageViewModels.Count());
             // Add available pages
             PageViewModels.Add(new TaskReportViewModel());
             PageViewModels.Add(new EmployeeViewModel());
             PageViewModels.Add(new TaskViewModel());
-            PageViewModels.Add(new AssignTasksViewModel());        
+            PageViewModels.Add(new AssignTasksViewModel());
 
-            // Set starting page
-            CurrentPageViewModel = PageViewModels[0];
         }
 
         #region Properties / Commands
@@ -101,6 +107,7 @@ namespace PlanningTool.ViewModel.ViewModels
 
                 return _pageViewModels;
             }
+           
         }
 
         public IPageViewModel CurrentPageViewModel
@@ -125,11 +132,14 @@ namespace PlanningTool.ViewModel.ViewModels
 
         private void ChangeViewModel(IPageViewModel viewModel)
         {
-            if (!PageViewModels.Contains(viewModel))
+            InitialSetup();
+            if (PageViewModels.Where(v => v.Name == viewModel.Name).Count() == 0)
                 PageViewModels.Add(viewModel);   
 
             CurrentPageViewModel = PageViewModels
-                .FirstOrDefault(vm => vm == viewModel);
+                .FirstOrDefault(vm => vm.Name == viewModel.Name);
+
+            
         }
 
         #endregion

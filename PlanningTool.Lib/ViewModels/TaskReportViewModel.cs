@@ -27,7 +27,7 @@ namespace PlanningTool.ViewModel.ViewModels
 
             foreach (var task in Tasks)
             {
-                task.EmployeeName = getEmployeeList.FirstOrDefault(e => e.EmployeeId == task.EmployeeId).EmployeeName;
+                task.EmployeeNameVal = getEmployeeList.FirstOrDefault(e => e.EmployeeId == task.EmployeeId).EmployeeName;
             }                   
         }
 

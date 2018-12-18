@@ -65,7 +65,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DataBaseScript\dbo.CreateDataTablesAndSp.sql" />
+    <Content Include="DataBaseScript\CreateDataTablesAndSp.sql" />
     <Content Include="PlanningBoard\dbo.CreateTask.sql" />
     <Content Include="PlanningBoard\dbo.Employee.sql" />
     <Content Include="PlanningBoard\dbo.GetEmployees.sql" />

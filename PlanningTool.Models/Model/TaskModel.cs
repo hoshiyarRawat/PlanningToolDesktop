@@ -10,7 +10,7 @@ namespace PlanningTool.Models.Model
     public class TaskModel : ObservableObject
     {
         #region "Public Properties"
-        
+
         public int TaskID { get; set; }
 
         public int? ParentTaskID { get; set; }
@@ -86,20 +86,20 @@ namespace PlanningTool.Models.Model
                 endDate = value;
                 OnPropertyChanged(nameof(this.EndDate));
             }
-        }      
+        }
 
         public int? PercentComplete { get; set; }
 
         public DateTime? DueDate { get; set; }
 
-     
+
         public string Status { get; set; }
 
         public int? EmployeeId { get; set; }
 
 
         private string employeeName;
-        public string EmployeeName
+        public string EmployeeNameVal
         {
             get { return employeeName; }
             set
@@ -107,11 +107,11 @@ namespace PlanningTool.Models.Model
                 if (value != employeeName)
                 {
                     employeeName = value;
-                    OnPropertyChanged("EmployeeName");
+                    OnPropertyChanged("EmployeeNameVal");
                 }
 
             }
-        }        
+        }
 
         private List<EmployeeModel> employeeList;
 
@@ -120,12 +120,8 @@ namespace PlanningTool.Models.Model
             get { return employeeList; }
             set
             {
-                if (value != employeeList)
-                {
-                    employeeList = value;
-                    OnPropertyChanged("EmployeeList");
-                }
-
+                employeeList = value;
+                OnPropertyChanged("EmployeeList");
             }
         }
 

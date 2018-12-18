@@ -34,13 +34,11 @@
                     <TextBlock Grid.Column="0" Grid.Row="3"  Text="Employees :" VerticalAlignment="Center" Margin="5" />
                     <ComboBox HorizontalAlignment="Left" Grid.Row="3"  Grid.Column="1"               
                  Margin="5" Width="150"                 
-                  ItemsSource="{Binding Path=EmployeeList}"    
-                  SelectedItem="{Binding Path=SelectdEmployee}"  
-                 >
+                  ItemsSource="{Binding Path=EmployeeList,Mode=TwoWay}"    
+                  SelectedItem="{Binding Path=SelectdEmployee,Mode=TwoWay}" >
                         <ComboBox.ItemTemplate>
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal">
-
                                     <TextBlock Text="{Binding Path=EmployeeName}"/>
                                 </StackPanel>
                             </DataTemplate>

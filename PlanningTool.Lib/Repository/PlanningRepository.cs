@@ -47,8 +47,8 @@ namespace PlanningTool.ViewModel.Repository
             using (DbCommand cmd = database.GetStoredProcCommand(Constants.CreateTask))
             {
                 cmd.Parameters.Add(new SqlParameter(Constants.Task_Id, taskModel.TaskID) { SqlDbType = SqlDbType.Int });            
-                cmd.Parameters.Add(new SqlParameter(Constants.Title, taskModel.Title) { SqlDbType = SqlDbType.NVarChar, Size = 100 });
-                cmd.Parameters.Add(new SqlParameter("@Task_Description", taskModel.Description) { SqlDbType = SqlDbType.NVarChar, Size =100 });
+                cmd.Parameters.Add(new SqlParameter(Constants.Title, taskModel.Title));
+                cmd.Parameters.Add(new SqlParameter("@Task_Description", taskModel.Description));
                 cmd.Parameters.Add(new SqlParameter(Constants.Task_Duration, taskModel.Duration) { SqlDbType = SqlDbType.Int });
                 cmd.Parameters.Add(new SqlParameter("@Task_startDate", DateTime.Now) { SqlDbType = SqlDbType.DateTime });
                 cmd.Parameters.Add(new SqlParameter(Constants.Task_Percentage, 10) { SqlDbType = SqlDbType.Int });

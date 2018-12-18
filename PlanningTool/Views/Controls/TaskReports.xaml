@@ -28,7 +28,7 @@
                         <Setter Property="Template">
                             <Setter.Value>
                                 <ControlTemplate TargetType="{x:Type ListBoxItem}">
-                                    <Border BorderThickness="3" BorderBrush="Gray">
+                                    <Border BorderThickness="1" BorderBrush="Gray">
                                         <Grid>
                                             <Grid.ColumnDefinitions>
                                                 <ColumnDefinition Width="70"/>
@@ -53,7 +53,7 @@
                                                 <ColumnDefinition Width="*"/>
                                                 <ColumnDefinition Width="*"/>                                               
                                             </Grid.ColumnDefinitions>
-                                            <TextBlock Text="{Binding EmployeeName}"></TextBlock>
+                                            <TextBlock Text="{Binding EmployeeNameVal}"></TextBlock>
                                             <ProgressBar Maximum="100" Value="100" Margin="0" Grid.Column="1" Grid.ColumnSpan="{Binding TaksDurationInDays}" Grid.Row="3" Name="pbStatus"/>
                                             <TextBlock Background="Transparent" Margin="10,0,0,0" Foreground="Black" Text="{Binding Description}" Grid.Row="3" Grid.Column="1"></TextBlock>
                                             

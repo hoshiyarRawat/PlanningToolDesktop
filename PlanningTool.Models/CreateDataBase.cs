@@ -42,13 +42,19 @@ namespace PlanningTool.Models
 
         public static void CreateTablesAndStoreProcedures()
         {
-            string sqlConnectionString = "Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security=True";
+                      
+            var fileContent = File.ReadAllText("CreateDataTablesAndSp.sql");
+            var sqlqueries = fileContent.Split(new[] { " GO " }, StringSplitOptions.RemoveEmptyEntries);
 
-            FileInfo file = new FileInfo("C:\\myscript.sql");
-
-            string script = file.OpenText().ReadToEnd();
-
-            SqlConnection conn = new SqlConnection(sqlConnectionString);          
+            var con = new SqlConnection("connstring");
+            var cmd = new SqlCommand("query", con);
+            con.Open();
+            foreach (var query in sqlqueries)
+            {
+                cmd.CommandText = query;
+                cmd.ExecuteNonQuery();
+            }
+            con.Close();
 
             //server.ConnectionContext.ExecuteNonQuery(script);
         }
