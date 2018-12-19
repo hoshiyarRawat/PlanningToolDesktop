@@ -6,3 +6,8 @@
 /SQLQuery3.sql
 /SQLQuery1.sql
 /Drop dbo.Employee.sql
+/PlanningTool/bin/Debug
+/PlanningTool.DataBase/bin/Debug
+/PlanningTool.Lib.UnitTest
+/PlanningTool.Models/bin/Debug
+/PlanningTool/obj/Debug/Views/Controls

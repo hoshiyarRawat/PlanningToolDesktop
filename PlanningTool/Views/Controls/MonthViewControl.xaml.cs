@@ -58,37 +58,13 @@ namespace PlanningTool.View.Views.Controls
                 DayBoxControl dayBox = new DayBoxControl();
                 dayBox.DayNumberLabel.Content = (i.ToString() + " " + datevalue.DayOfWeek.ToString().Substring(0,3));
                
-                // -- for design mode, add appointments to random days for show...
-                if (System.ComponentModel.DesignerProperties.GetIsInDesignMode(this))
-                {
-                    //if (Microsoft.VisualBasic.Rnd(1) < 0.25)
-                    //{
-                    //    DayBoxAppointmentControl apt = new DayBoxAppointmentControl();
-                    //    apt.DisplayText.Text = "Apt on " + i + "th";
-                    //    dayBox.DayAppointmentsStack.Children.Add(apt);
-                    //}
-                }
-                //else if (_monthAppointments != null)
-                //{
-                //    // -- Compiler warning about unpredictable results if using i (the iterator) in lambda, the 
-                //    // "hint" suggests declaring another var and set equal to iterator var
-                //    int iday = i;
-                //    List<Appointment> aptInDay = _monthAppointments.FindAll(new System.Predicate<Appointment>(Appointment apt => (DateTime)apt.StartTime.Day == iday));
-                //    foreach (Appointment a in aptInDay)
-                //    {
-                //        DayBoxAppointmentControl apt = new DayBoxAppointmentControl();
-                //        apt.DisplayText.Text = a.Subject;
-                //        apt.Tag = a.AppointmentID;
-                //        apt.MouseDoubleClick += Appointment_DoubleClick;
-                //        dayBox.DayAppointmentsStack.Children.Add(apt);
-                //    }
-                //}
+              
 
                 Grid.SetColumn(dayBox, j);
                 j++;
                 weekRowCtrl.WeekRowGrid.Children.Add(dayBox);
             }
-           // Grid.SetRow(weekRowCtrl, iWeekCount);
+          
             MonthViewGrid.Children.Add(weekRowCtrl);
         }
 

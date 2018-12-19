@@ -55,7 +55,7 @@
                                             </Grid.ColumnDefinitions>
                                             <TextBlock Text="{Binding EmployeeNameVal}"></TextBlock>
                                             <ProgressBar Maximum="100" Value="100" Margin="0" Grid.Column="1" Grid.ColumnSpan="{Binding TaksDurationInDays}" Grid.Row="3" Name="pbStatus"/>
-                                            <TextBlock Background="Transparent" Margin="10,0,0,0" Foreground="Black" Text="{Binding Description}" Grid.Row="3" Grid.Column="1"></TextBlock>
+                                            <TextBlock Background="Transparent" Margin="10,0,0,0" Foreground="Black" Grid.ColumnSpan="{Binding TaksDurationInDays}" Text="{Binding Description}" Grid.Row="3" Grid.Column="1"></TextBlock>
                                             
                                         </Grid>
                                     </Border>

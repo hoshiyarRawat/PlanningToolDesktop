@@ -48,7 +48,7 @@ namespace PlanningTool.Models.Model
             {
                 duration = value;
                 OnPropertyChanged(nameof(this.Duration));
-                TaksDurationInDays = value / 8;
+                TaksDurationInDays = (value / 8);
             }
         }
 

@@ -40,7 +40,7 @@ namespace PlanningTool.ViewModel.ViewModels
         private void SaveEmployeeData()
         {
             //var config = ConfigurationManager.ConnectionStrings[1];
-            //CreateDataBase.CreateDataBaseWithdata(config.ConnectionString);
+            CreateDataBase.CreateStatusData();
         }
 
     }

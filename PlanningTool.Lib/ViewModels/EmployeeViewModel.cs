@@ -72,7 +72,7 @@ namespace PlanningTool.ViewModel.ViewModels
 
         private void SaveEmployeeData()
         {
-            var empId = (model.EmployeeList.Count() == 0) ? 1 : model.EmployeeList.Max(e => e.EmployeeId);
+            var empId = (model.EmployeeList.Count() == 0) ? 0 : model.EmployeeList.Max(e => e.EmployeeId);
             CurrentEmployee.EmployeeId = ++ empId;
             repo.CreateEmployee(CurrentEmployee);
             InitialLoad();

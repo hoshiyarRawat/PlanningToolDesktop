@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:PlanningTool.View.Views.Controls"
              mc:Ignorable="d" 
              >
-    <Grid x:Name="WeekRowGrid" Background="Gray">
+    <Grid x:Name="WeekRowGrid">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>            
             <ColumnDefinition Width="*"/>
@@ -29,8 +29,6 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>                      
-        </Grid.ColumnDefinitions>
-
-  
+        </Grid.ColumnDefinitions>       
     </Grid>
 </UserControl>

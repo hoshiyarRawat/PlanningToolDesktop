@@ -80,7 +80,7 @@ namespace PlanningTool.ViewModel.ViewModels
 
         private void CreateTasksData()
         {
-            var taskId = (TaskModelList.Count() == 0) ? 1 : TaskModelList.Max(t => t.TaskID);
+            var taskId = (TaskModelList.Count() == 0) ? 0 : TaskModelList.Max(t => t.TaskID);
             CurrentTask.TaskID = ++taskId;                   
             repo.CreateTask(CurrentTask);
             Initial();
