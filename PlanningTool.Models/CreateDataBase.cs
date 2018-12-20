@@ -1,12 +1,8 @@
 ﻿using PlanningTool.DataBase.Database;
 using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PlanningTool.Models
 {
@@ -62,22 +58,22 @@ namespace PlanningTool.Models
 
         public static void CreateStatusData()
         {
+           // Need to code for automatic data creation
+           // var path = AppDomain.CurrentDomain.BaseDirectory;
+           //var  fullPath = Path.GetFullPath("DataBaseScript");
+           // var fullPathq = Path.GetFullPath("CreateDataTablesAndSp.sql");
 
-            var path = AppDomain.CurrentDomain.BaseDirectory;
-           var  fullPath = Path.GetFullPath("DataBaseScript");
-            var fullPathq = Path.GetFullPath("CreateDataTablesAndSp.sql");
+           // using (var ctx = new PlanningToolData())
+           // {
+           //     var stud = new Status() {  Id = 1 , Status1 = "Not Started" };
+           //     ctx.Status.Add(stud);
+           //     stud = new Status() { Id = 2, Status1 = "In Progress" };
+           //     ctx.Status.Add(stud);
+           //     stud = new Status() { Id = 3, Status1 = "Done" };
+           //     ctx.Status.Add(stud);
 
-            using (var ctx = new PlanningToolData())
-            {
-                var stud = new Status() {  Id = 1 , Status1 = "Not Started" };
-                ctx.Status.Add(stud);
-                stud = new Status() { Id = 2, Status1 = "In Progress" };
-                ctx.Status.Add(stud);
-                stud = new Status() { Id = 3, Status1 = "Done" };
-                ctx.Status.Add(stud);
-
-                ctx.SaveChanges();
-            }
+           //     ctx.SaveChanges();
+           // }
 
         }
 

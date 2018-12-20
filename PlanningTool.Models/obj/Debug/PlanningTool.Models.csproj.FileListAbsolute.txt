@@ -1,8 +1,0 @@
-C:\HoshiyarDownLoad\PlanningTool\PlanningTool.Models\bin\Debug\PlanningTool.Models.dll
-C:\HoshiyarDownLoad\PlanningTool\PlanningTool.Models\bin\Debug\PlanningTool.Models.pdb
-C:\HoshiyarDownLoad\PlanningTool\PlanningTool.Models\obj\Debug\PlanningTool.Models.dll
-C:\HoshiyarDownLoad\PlanningTool\PlanningTool.Models\obj\Debug\PlanningTool.Models.pdb
-C:\HoshiyarDownLoad\PlanningTool\PlanningTool.Models\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
-C:\HoshiyarDownLoad\PlanningTool\PlanningTool.Models\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
-C:\HoshiyarDownLoad\PlanningTool\PlanningTool.Models\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
-C:\HoshiyarDownLoad\PlanningTool\PlanningTool.Models\obj\Debug\PlanningTool.Models.csprojResolveAssemblyReference.cache

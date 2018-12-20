@@ -74,6 +74,12 @@
     <Content Include="PlanningBoard\dbo.Status.sql" />
     <Content Include="PlanningBoard\dbo.Task.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PlanningTool.DataBase\PlanningTool.DataBase.csproj">
+      <Project>{C22FB5E1-EF84-46FF-81FD-BCF1B5ABBEC3}</Project>
+      <Name>PlanningTool.DataBase</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
